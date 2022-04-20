@@ -31,7 +31,11 @@ const policies:OPolicy[] = [
     IssuedAt: '2020-01-01',
     IssuedIn: '',
     InForceSince: '2020-01-01',
-    PolicyFiles : []
+    PolicyFiles: [],
+    PolicyType: {
+      Id: '1',
+      Name: 'Undang-Undang'
+    }
   },
   {
     Id: 1,
@@ -53,7 +57,11 @@ const policies:OPolicy[] = [
     IssuedAt: '2020-01-01',
     IssuedIn: '',
     InForceSince: '2020-01-01',
-    PolicyFiles : []
+    PolicyFiles: [],
+        PolicyType: {
+      Id: '1',
+      Name: 'Undang-Undang'
+    }
   },
   {
     Id: 1,
@@ -75,7 +83,11 @@ const policies:OPolicy[] = [
     IssuedAt: '2020-01-01',
     IssuedIn: '',
     InForceSince: '2020-01-01',
-    PolicyFiles : []
+    PolicyFiles: [],
+        PolicyType: {
+      Id: '1',
+      Name: 'Undang-Undang'
+    }
   },
   {
     Id: 1,
@@ -97,7 +109,11 @@ const policies:OPolicy[] = [
     IssuedAt: '2020-01-01',
     IssuedIn: '',
     InForceSince: '2020-01-01',
-    PolicyFiles : []
+    PolicyFiles: [],
+        PolicyType: {
+      Id: '1',
+      Name: 'Undang-Undang'
+    }
   },
   {
     Id: 1,
@@ -119,7 +135,11 @@ const policies:OPolicy[] = [
     IssuedAt: '2020-01-01',
     IssuedIn: '',
     InForceSince: '2020-01-01',
-    PolicyFiles : []
+    PolicyFiles: [],
+        PolicyType: {
+      Id: '1',
+      Name: 'Undang-Undang'
+    }
   },
   
 ]
@@ -150,7 +170,7 @@ const Home: NextPage = () => {
   }
 
   return (
-    <AppLayout title={''}>
+    <AppLayout title='aturannya.app'>
       <div className='flex flex-col w-full px-10 mx-auto mt-10 antialiased md:w-2/3 gap-y-10'>
         <section>
           <h1 className='text-4xl text-center md:text-5xl lg:text-6xl'>
@@ -179,7 +199,7 @@ const Home: NextPage = () => {
           </Tab.Panels>
         </Tab.Group>
       </div>
-    </AppLayout>
+      </AppLayout>
   )
 }
 

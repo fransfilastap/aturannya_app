@@ -9,6 +9,13 @@ export type Initiator = {
     Name: string;
 }
 
+export type OPolicyType = {
+    Id: string;
+    Name: string;
+    Parent?: OPolicyType;
+    Hierarchy?: OPolicyType[];
+}
+
 export type OPolicy = {
     Id: number;
     On: string;
@@ -21,7 +28,11 @@ export type OPolicy = {
     IssuedAt: string;
     IssuedIn: string;
     InForceSince: string;
-    PolicyFiles : OPolicyFile[];
+    PolicyFiles: OPolicyFile[];
+    PolicyType: OPolicyType;
+    CreatedAt?: string;
+    UpdatedAt?: string;
+    DeletedAt?: string;
 }
 
 export type OPolicyFile = {
